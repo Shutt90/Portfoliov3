@@ -15,10 +15,30 @@
   width: calc(100% + 40px);
 }
 
+.line-1-black {
+  position: absolute;
+  display: block;
+  background-color: black;
+  top: -20px;
+  left: -20px;
+  height: 5px;
+  width: calc(100% + 40px);
+}
+
 .line-2 {
   position: absolute;
   display: block;
   background-color: white;
+  top: -20px;
+  left: -20px;
+  height: calc(100% + 40px);
+  width: 5px;
+}
+
+.line-2-black {
+  position: absolute;
+  display: block;
+  background-color: black;
   top: -20px;
   left: -20px;
   height: calc(100% + 40px);
@@ -35,10 +55,30 @@
   width: 5px;
 }
 
+.line-3-black {
+  position: absolute;
+  display: block;
+  background-color: black;
+  top: -20px;
+  right: -20px;
+  height: calc(100% + 40px);
+  width: 5px;
+}
+
 .line-4 {
   position: absolute;
   display: block;
   background-color: white;
+  bottom: -20px;
+  right: -20px;
+  height: 5px;
+  width: calc(100% + 40px);
+}
+
+.line-4-black {
+  position: absolute;
+  display: block;
+  background-color: black;
   bottom: -20px;
   right: -20px;
   height: 5px;

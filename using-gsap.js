@@ -12,7 +12,26 @@ gsap.from(".about-img", {
     delay: 2,
 })
 
-gsap.from("about-me__socials-icon", {
-    x: 100,
-    opacity: 0,
+gsap.to(`.line-1-black`, {
+    x: -700,
+    duration: 4,
+    delay: 3,
 })
+
+gsap.to(`.line-2-black`, {
+    y: -500,
+    duration: 4,
+    delay: 4.4,
+})
+
+gsap.to(`.line-4-black`, {
+    x: 700,
+    duration: 4,
+    delay: 4.4,
+})
+gsap.to(`.line-3-black`, {
+    y: 500,
+    duration: 4,
+    delay: 5.8,
+})
+
