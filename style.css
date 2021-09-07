@@ -9,7 +9,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: blueviolet;
+  background-color: black;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -18,6 +18,7 @@
           align-items: center;
   height: 100vh;
   width: 100vw;
+  color: white;
 }
 
 .about-me {
@@ -39,6 +40,29 @@
   font-size: 2rem;
 }
 
+.about-me__socials {
+  font-size: 3rem;
+  margin: 1rem 0.5rem;
+}
+
+.about-me__socials a {
+  color: white;
+  text-decoration: none;
+}
+
+.about-me__socials a:hover {
+  text-decoration: none;
+}
+
+.about-me__socials > * {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.about-me__socials > *:hover {
+  color: blueviolet;
+}
+
 .about-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,8 +79,10 @@
 .about-img img {
   max-height: 70vh;
   width: auto;
-  -webkit-clip-path: circle(50%);
-          clip-path: circle(50%);
+  -webkit-clip-path: circle(60%);
+          clip-path: circle(60%);
+  -webkit-box-shadow: 0 0 1rem white;
+          box-shadow: 0 0 1rem white;
 }
 
 .js-yellow {

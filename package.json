@@ -1,0 +1,23 @@
+{
+  "name": "portfoliov3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "gsap": "^3.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shutt90/Portfoliov3.git"
+  },
+  "author": "Liam Pugh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shutt90/Portfoliov3/issues"
+  },
+  "homepage": "https://github.com/Shutt90/Portfoliov3#readme"
+}
