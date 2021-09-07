@@ -1,3 +1,5 @@
+//About Section
+
 gsap.from(".about-me", {
     x: -500,
     duration: 2,
@@ -18,20 +20,37 @@ gsap.to(`.line-1-black`, {
     delay: 3,
 })
 
-gsap.to(`.line-2-black`, {
-    y: -500,
-    duration: 4,
-    delay: 4.4,
-})
 
-gsap.to(`.line-4-black`, {
+gsap.to(`.line-2-black`, {
     x: 700,
     duration: 4,
     delay: 4.4,
 })
-gsap.to(`.line-3-black`, {
-    y: 500,
-    duration: 4,
-    delay: 5.8,
+
+
+// Skill Section
+
+gsap.from('.skills-container__box__skill-right', {
+    scrollTrigger: {
+        trigger: ".skills-container__box",
+        start: "top center",
+        end: "50%"
+    },
+    x: -100,
+    opacity: 0,
+    stagger: 1,
+    duration: 1,
 })
 
+
+gsap.from('.skills-container__box__skill-left', {
+    scrollTrigger: {
+        trigger: ".skills-container__box",
+        start: "top center",
+        end: "50%"
+    },
+    x: 100,
+    opacity: 0,
+    stagger: 1,
+    duration: 1,
+})
