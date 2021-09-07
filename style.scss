@@ -4,6 +4,52 @@
     box-sizing: border-box;
 }
 
+
+.line {
+    &-1 {
+        position: absolute;
+        display: block;
+        background-color: white;
+        top: -20px;
+        left: -20px;
+        height: 5px;
+        width: calc(100% + 40px);
+    }
+
+    &-2 {
+        position: absolute;
+        display: block;
+        background-color: white;
+        top: -20px;
+        left: -20px;
+        height: calc(100% + 40px);
+        width: 5px;
+
+    }
+
+    &-3 {
+        position: absolute;
+        display: block;
+        background-color: white;
+        top: -20px;
+        right: -20px;
+        height: calc(100% + 40px);
+        width: 5px;
+
+    }
+
+    &-4 {
+        position: absolute;
+        display: block;
+        background-color: white;
+        bottom: -20px;
+        right: -20px;
+        height: 5px;
+        width: calc(100% + 40px);
+
+    }
+}
+
 .about {
     display: flex;  
     background-color: black;
@@ -15,6 +61,7 @@
     
 
     &-me {  
+        position: relative;
         display: flex;
         flex-direction: column;
         
@@ -25,11 +72,9 @@
 
         &__subtitle {   
             margin: 1rem 0;
-
             font-size: 2rem;
 
         }
-
 
         &__socials {
             font-size: 3rem;
@@ -58,7 +103,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 2rem;
+        margin: 5rem;
         
         img {
             max-height: 70vh;
