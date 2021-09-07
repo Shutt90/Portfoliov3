@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about {
+    display: flex;  
+    background-color: blueviolet;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    
+
+    &-me {  
+        display: flex;
+        flex-direction: column;
+        
+        &__title {
+            font-size: 3rem;
+
+        }
+
+        &__subtitle {   
+            margin: 1rem 0;
+
+            font-size: 2rem;
+
+        }
+    }
+
+    &-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;   
+        
+        img {
+            max-height: 70vh;
+            width: auto;
+            clip-path: circle(50%);
+
+        }
+
+    }
+
+}
+
+
+@import "partials/colors";
+@import "partials/responsive";
