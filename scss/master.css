@@ -199,38 +199,6 @@
   margin-left: 10rem;
 }
 
-.skills-container__box .html {
-  color: black;
-}
-
-.skills-container__box .html:hover {
-  color: #dd4b25;
-}
-
-.skills-container__box .bs {
-  color: black;
-}
-
-.skills-container__box .bs:hover {
-  color: #7610f1;
-}
-
-.skills-container__box .npm {
-  color: black;
-}
-
-.skills-container__box .npm:hover {
-  color: #cb3837;
-}
-
-.skills-container__box .laravel {
-  color: black;
-}
-
-.skills-container__box .laravel:hover {
-  color: #f72c1f;
-}
-
 .skills-container__box__skill-right {
   display: -webkit-box;
   display: -ms-flexbox;
