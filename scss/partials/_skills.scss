@@ -31,7 +31,38 @@
                 align-content: center;
                 margin-bottom: 1rem;
                 margin-left:10rem;
-                height: auto;
+            }
+
+            .html {
+                color: black;
+                
+                &:hover {
+                   color: $html-red;
+                }
+            }
+
+            .bs {
+                color: black;
+                
+                &:hover {
+                   color: $bs-purple;
+                }
+            }
+
+            .npm {
+                color: black;
+                
+                &:hover {
+                   color: $npm-red;
+                }
+            }
+
+            .laravel {
+                color: black;
+                
+                &:hover {
+                   color: $lara-red;
+                }
             }
 
             &__skill-right {
@@ -40,6 +71,31 @@
                 align-content: center;
                 margin-bottom: 1rem;
                 margin-right:10rem;
+            }
+
+            .css {
+                color: black;
+                
+                &:hover {
+                   color: $css-blue;
+                }
+            }
+
+            .js {
+                color: black;
+                
+                &:hover {
+                   color: $js-yellow;
+                }
+            }
+
+
+            .php {
+                color: black;
+                
+                &:hover {
+                   color: $php-purple;
+                }
             }
         }
     }

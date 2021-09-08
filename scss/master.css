@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,900;1,200&display=swap");
+.margin {
+  max-width: calc(100% - 100px);
+}
+
+.js-yellow {
+  color: #efd81d;
+}
+
+.lara-red {
+  color: #f72c1f;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -185,7 +197,38 @@
       align-content: center;
   margin-bottom: 1rem;
   margin-left: 10rem;
-  height: auto;
+}
+
+.skills-container__box .html {
+  color: black;
+}
+
+.skills-container__box .html:hover {
+  color: #dd4b25;
+}
+
+.skills-container__box .bs {
+  color: black;
+}
+
+.skills-container__box .bs:hover {
+  color: #7610f1;
+}
+
+.skills-container__box .npm {
+  color: black;
+}
+
+.skills-container__box .npm:hover {
+  color: #cb3837;
+}
+
+.skills-container__box .laravel {
+  color: black;
+}
+
+.skills-container__box .laravel:hover {
+  color: #f72c1f;
 }
 
 .skills-container__box__skill-right {
@@ -201,15 +244,27 @@
   margin-right: 10rem;
 }
 
-.margin {
-  max-width: calc(100% - 100px);
+.skills-container__box .css {
+  color: black;
 }
 
-.js-yellow {
+.skills-container__box .css:hover {
+  color: #0d75bb;
+}
+
+.skills-container__box .js {
+  color: black;
+}
+
+.skills-container__box .js:hover {
   color: #efd81d;
 }
 
-.lara-red {
-  color: #f72c1f;
+.skills-container__box .php {
+  color: black;
+}
+
+.skills-container__box .php:hover {
+  color: #777bb3;
 }
 /*# sourceMappingURL=master.css.map */
