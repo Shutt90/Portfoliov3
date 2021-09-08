@@ -16,6 +16,7 @@ const js = document.querySelector(".js");
 const npm = document.querySelector(".npm");
 const php = document.querySelector(".php");
 const laravel = document.querySelector(".laravel");
+const db = document.querySelector(".db");
 
 lightUp(html, "#dd4b25", 1000);
 lightUp(css, "#0d75bb", 1200);
@@ -24,7 +25,18 @@ lightUp(js, "#efd81d", 1600);
 lightUp(npm, "#cb3837", 1800);
 lightUp(php, "#777bb3", 2000);
 lightUp(laravel, "#f72c1f", 2200);
+lightUp(db, "#dd8a00", 2400);
 
-document.querySelector(".html").addEventListener("mouseenter", function() {
-    console.log("Mouse has entered");
-})
+function addText(className, divName){};
+
+html.addEventListener("mouseenter", function() {
+    let stopChildren = false;
+
+    if(document.querySelector(".spanHtml") == null && document.querySelector(".spanHtml") == "undefinat") {
+        stopChildren = true;
+        let spanHtml = document.createElement("span");
+        spanHtml.className = "html-text";
+        spanHtml.innerHTML = "THIS IS TEXT";
+        html.appendChild(spanHtml);
+    }
+});
