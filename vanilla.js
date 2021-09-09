@@ -31,7 +31,7 @@ html.addEventListener("mouseenter", addSpan(html, "HTML"));
 css.addEventListener("mouseenter", addSpan(css, "CSS"));
 bs.addEventListener("mouseenter", addSpan(bs, "Bootstrap"));
 js.addEventListener("mouseenter", addSpan(js, "JavaScript"));
-npm.addEventListener("mouseenter", addSpan(npm, "Node Package Manager"));
+npm.addEventListener("mouseenter", addSpan(npm, "NPM"));
 php.addEventListener("mouseenter", addSpan(php, "PHP"));
 laravel.addEventListener("mouseenter", addSpan(laravel, "Laravel"));
 db.addEventListener("mouseenter", addSpan(db, "MySQL"));
@@ -46,6 +46,9 @@ function addSpan(className, techName){
             var span = document.createElement("span");
             span.className = `${tech}-text`
             span.innerHTML=`${tech}`;
+            span.style.color = "black";
+            span.style.fontSize = "1.5rem"
+            span.style.marginLeft = "1rem"
             location.appendChild(span);
             usedOnce=true;
         }

@@ -1,5 +1,13 @@
-//About Section
+// Snapping to sections
+let sections = gsap.utils.toArray("section");
+gsap.to(sections, {
+    scrollTrigger: {
+        scrub: 1,
+        snap: 1 / (sections.length - 1),
+    }
+});
 
+//About Section
 gsap.from(".about-me", {
     x: -500,
     duration: 2,
@@ -89,3 +97,25 @@ gsap.fromTo('.skills-arrow', {
     duration: 2,
     yoyo: true,
 })
+
+gsap.to(sections, {
+  xPercent: -100 * (sections.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".projects",
+    pin: true,
+    scrub: 1,
+    snap: directionalSnap(1 / (sections.length - 1)),
+    // base vertical scrolling on how wide the container is so it feels more natural.
+    end: "+=3500"
+  }
+});
+
+function directionalSnap(increment) {
+    let snapFunc = gsap.utils.snap(increment);
+    return (raw, self) => {
+      let n = snapFunc(raw);
+      return Math.abs(n - raw) < 1e-4 || (n < raw) === self.direction < 0 ? n : self.direction < 0 ? n - increment : n + increment;
+    };
+  }
+  

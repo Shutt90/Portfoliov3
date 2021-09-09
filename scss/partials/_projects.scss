@@ -1,8 +1,16 @@
 .projects {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
     height: 100vh;
     background-color: #0492C2;
+    overflow-x: hidden;
+
+    &-box {
+        height:100%;
+        display:flex;
+    }
 
     &-text {
         &__title {
