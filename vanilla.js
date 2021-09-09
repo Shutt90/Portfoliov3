@@ -27,16 +27,27 @@ lightUp(php, "#777bb3", 2000);
 lightUp(laravel, "#f72c1f", 2200);
 lightUp(db, "#dd8a00", 2400);
 
-function addText(className, divName){};
+html.addEventListener("mouseenter", addSpan(html, "HTML"));
+css.addEventListener("mouseenter", addSpan(css, "CSS"));
+bs.addEventListener("mouseenter", addSpan(bs, "Bootstrap"));
+js.addEventListener("mouseenter", addSpan(js, "JavaScript"));
+npm.addEventListener("mouseenter", addSpan(npm, "Node Package Manager"));
+php.addEventListener("mouseenter", addSpan(php, "PHP"));
+laravel.addEventListener("mouseenter", addSpan(laravel, "Laravel"));
+db.addEventListener("mouseenter", addSpan(db, "MySQL"));
+    
+function addSpan(className, techName){
+    var usedOnce = false;
+    const location = className;
+    const tech = techName;
 
-html.addEventListener("mouseenter", function() {
-    let stopChildren = false;
-
-    if(document.querySelector(".spanHtml") == null && document.querySelector(".spanHtml") == "undefinat") {
-        stopChildren = true;
-        let spanHtml = document.createElement("span");
-        spanHtml.className = "html-text";
-        spanHtml.innerHTML = "THIS IS TEXT";
-        html.appendChild(spanHtml);
+    return function addSpanElement(){        
+        if(!usedOnce){
+            var span = document.createElement("span");
+            span.className = `${tech}-text`
+            span.innerHTML=`${tech}`;
+            location.appendChild(span);
+            usedOnce=true;
+        }
     }
-});
+}
