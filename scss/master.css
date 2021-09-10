@@ -380,7 +380,7 @@
   text-decoration: none;
   position: relative;
   font-size: 14px;
-  color: #333;
+  color: whitesmoke;
   background-color: #05b8f4;
   display: block;
   padding: 14px 20px;
@@ -395,7 +395,7 @@
           transform: translate(-50%, -50%);
   pointer-events: none;
   border-radius: 50%;
-  background-color: #f72c1f;
+  background-color: #02475e;
   -webkit-animation: rippleEffect 1s linear infinite;
           animation: rippleEffect 1s linear infinite;
 }

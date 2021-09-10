@@ -71,12 +71,18 @@
     }
 }
 
-.see-more {
+.see {
+
+  &-link {
+    text-decoration: none;
+  }
+
+  &-more {
     margin-top: 2rem;
     text-decoration: none;
     position: relative;
     font-size: 14px;
-    color: #333;
+    color: whitesmoke;
     background-color: lighten(#0492C2, 10%);
     display: block;
     padding: 14px 20px;
@@ -89,7 +95,7 @@
       transform: translate(-50%, -50%);
       pointer-events: none;
       border-radius: 50%;
-      background-color: $lara-red;
+      background-color: darken(#0492C2, 20%);
       animation: rippleEffect 1s linear infinite;
     }
   }
