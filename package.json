@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "gsap": "^3.7.1"
   },
   "devDependencies": {},
