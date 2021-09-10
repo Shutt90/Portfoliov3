@@ -7,22 +7,25 @@
     background-color: #0492C2;
     overflow-x: hidden;
 
-    &-box {
-        height:100%;
-        display:flex;
+    .project {
+        height: 100vh;
+        width: 100%;
+
     }
 
     &-text {
+        width: calc(100% - 100px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 3rem;
+        
         &__title {
-            padding-top: 3rem;   
             font-size: 3rem;
-            text-align: center;
-            margin-bottom: 5rem;
         }
 
         &__content {
             font-size: 1rem;
-            text-align: center;
         }
     }
 
@@ -31,7 +34,7 @@
         flex-wrap: wrap;
         column-count: 3;
         justify-content: space-between;
-        margin-top: 3rem;
+        margin: 3rem;
 
         &__box {
             display: flex;
@@ -47,3 +50,38 @@
         }
     }
 }
+
+.see-more {
+    text-decoration: none;
+    position: relative;
+    font-size: 14px;
+    color: #333;
+    background-color: #ddd;
+    display: block;
+    padding: 14px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100px;
+    
+    div {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      border-radius: 50%;
+      background-color: $lara-red;
+      animation: rippleEffect 1s linear infinite;
+    }
+  }
+
+  @keyframes rippleEffect {
+    from {
+      width: 0;
+      height: 0;
+      opacity: .7;
+    }
+    to {
+      width: 500px;
+      height: 500px;
+      opacity: 0;
+    }
+  }

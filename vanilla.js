@@ -54,3 +54,21 @@ function addSpan(className, techName){
         }
     }
 }
+
+const seeMore = document.querySelector(".see-more");
+
+seeMore.addEventListener("click", function(e){
+
+    let x = e.clientX - e.target.offsetLeft;
+    let y = e.clientY - e.target.offsetTop;
+
+    const ripple = document.createElement('div');
+
+    ripple.style.left = x + 'px';
+    ripple.style.top = y + 'px';
+    seeMore.appendChild(ripple);
+
+    setTimeout(() => {
+        ripple.remove()
+      }, 1000)
+    });
