@@ -35,7 +35,8 @@ npm.addEventListener("mouseenter", addSpan(npm, "NPM"));
 php.addEventListener("mouseenter", addSpan(php, "PHP"));
 laravel.addEventListener("mouseenter", addSpan(laravel, "Laravel"));
 db.addEventListener("mouseenter", addSpan(db, "MySQL"));
-    
+
+// Function to create a span next to the icons with the text of techName arguement
 function addSpan(className, techName){
     var usedOnce = false;
     const location = className;
@@ -55,9 +56,10 @@ function addSpan(className, techName){
     }
 }
 
+// See-more button with a ripple affect, offseting from left/top of event target pos
 const seeMore = document.querySelector(".see-more");
 
-seeMore.addEventListener("click", function(e){
+seeMore.addEventListener("mouseover", function(e){
 
     let x = e.clientX - e.target.offsetLeft;
     let y = e.clientY - e.target.offsetTop;

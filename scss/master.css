@@ -338,12 +338,50 @@
      object-fit: cover;
 }
 
+.projects-images {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects-images-1 {
+  width: calc(100px);
+  height: 10px/3;
+  margin-left: 3rem;
+}
+
+.projects-images-2 {
+  width: calc(200px);
+  height: 20px/3;
+  margin-left: 3rem;
+}
+
+.projects-images-3 {
+  width: calc(300px);
+  height: 30px/3;
+  margin-left: 3rem;
+}
+
+.projects-images-4 {
+  width: calc(400px);
+  height: 40px/3;
+  margin-left: 3rem;
+}
+
+.projects-images-5 {
+  height: 300px;
+  width: auto;
+  margin-left: 3rem;
+}
+
 .see-more {
+  margin-top: 2rem;
   text-decoration: none;
   position: relative;
   font-size: 14px;
   color: #333;
-  background-color: #ddd;
+  background-color: #05b8f4;
   display: block;
   padding: 14px 20px;
   border-radius: 10px;
