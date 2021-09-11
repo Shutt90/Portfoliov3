@@ -118,4 +118,14 @@ function directionalSnap(increment) {
       return Math.abs(n - raw) < 1e-4 || (n < raw) === self.direction < 0 ? n : self.direction < 0 ? n - increment : n + increment;
     };
   }
-  
+
+gsap.from(".projects-images-image", {
+    scrollTrigger: {
+        trigger: ".projects-text",
+        start: "top center",
+    },
+    y: 500,
+    opacity: 0,
+    stagger: 0.5,
+    duration: 1,
+})
