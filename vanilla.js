@@ -74,3 +74,33 @@ seeMore.addEventListener("mouseover", function(e){
         ripple.remove()
       }, 1000)
     });
+
+    // Adds lightbox effect to everything with class project-images-images
+
+    const lightbox = document.createElement('div')
+    lightbox.id = 'lightbox'
+    document.body.appendChild(lightbox)
+    
+    const images = document.querySelectorAll('.projects-images-image')
+    images.forEach(image => {
+      image.addEventListener('click', e => {
+        lightbox.classList.add('active')
+        const img = document.createElement('img')
+        img.src = image.src
+        while (lightbox.firstChild) {
+          lightbox.removeChild(lightbox.firstChild)
+        }
+        lightbox.appendChild(img)
+      })
+    })
+    
+    lightbox.addEventListener('click', e => {
+      if (e.target !== e.currentTarget) return
+      lightbox.classList.remove('active')
+    })
+
+    document.addEventListener('keydown', e => {  
+        if (e.code == "Escape")
+        lightbox.classList.remove('active')
+        else return
+    });
