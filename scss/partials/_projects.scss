@@ -58,7 +58,7 @@
 
     @for $i from 1 through 4 {
     &-#{$i} {
-      width: calc(#{$i}00px);
+      width: calc(#{$i}00px - 20px);
         height: #{$i}00px / 3;
         margin-left: 3rem;
         
@@ -77,21 +77,24 @@
 
   &-link {
     text-decoration: none;
+
   }
 
   &-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 2rem;
     text-decoration: none;
     position: relative;
     font-size: 14px;
     color: whitesmoke;
     background-color: lighten(#0492C2, 10%);
-    display: block;
     padding: 14px 20px;
     border-radius: 10px;
     overflow: hidden;
-    width: 100px;
-    
+    width: 150px;
+
     div {
       position: absolute;
       transform: translate(-50%, -50%);

@@ -382,25 +382,25 @@
 }
 
 .projects-images-1 {
-  width: calc(100px);
+  width: calc(100px - 20px);
   height: 10px/3;
   margin-left: 3rem;
 }
 
 .projects-images-2 {
-  width: calc(200px);
+  width: calc(200px - 20px);
   height: 20px/3;
   margin-left: 3rem;
 }
 
 .projects-images-3 {
-  width: calc(300px);
+  width: calc(300px - 20px);
   height: 30px/3;
   margin-left: 3rem;
 }
 
 .projects-images-4 {
-  width: calc(400px);
+  width: calc(400px - 20px);
   height: 40px/3;
   margin-left: 3rem;
 }
@@ -416,17 +416,25 @@
 }
 
 .see-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 2rem;
   text-decoration: none;
   position: relative;
   font-size: 14px;
   color: whitesmoke;
   background-color: #05b8f4;
-  display: block;
   padding: 14px 20px;
   border-radius: 10px;
   overflow: hidden;
-  width: 100px;
+  width: 150px;
 }
 
 .see-more div {
