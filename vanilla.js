@@ -100,7 +100,7 @@ seeMore.addEventListener("mouseover", function(e){
     })
 
     document.addEventListener('keydown', e => {  
-        if (e.code == "Escape")
+        if (e.code == "Escape" || e.code ==  "Enter")
         lightbox.classList.remove('active')
         else return
     });
