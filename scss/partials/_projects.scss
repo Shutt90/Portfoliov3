@@ -8,10 +8,10 @@
   overflow-x: hidden;
 
   .project {
-      height: 100vh;
+      height: 100%;
       width: 100%;
+    }
 
-  }
 
   &-text {
     width: calc(100% - 100px);
@@ -54,7 +54,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    width: 100%;
 
     @for $i from 1 through 4 {
     &-#{$i} {
@@ -70,10 +70,24 @@
       width: auto;
       margin-left: 3rem;
     }
+
+    
+    &-pong {
+      width: auto;
+      height: 70%;
+      margin: 0 auto;
+    }
   }
+
+
+  
 }
 
 .see {
+  
+  &-buttons {
+    display: flex;
+  }
 
   &-link {
     text-decoration: none;
@@ -94,6 +108,7 @@
     border-radius: 10px;
     overflow: hidden;
     width: 150px;
+    margin-right:2rem;
 
     div {
       position: absolute;

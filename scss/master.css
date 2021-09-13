@@ -298,13 +298,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
+  height: 100%;
   background-color: #0492C2;
   overflow-x: hidden;
 }
 
 .projects .project {
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -376,9 +376,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 100%;
 }
 
 .projects-images-1 {
@@ -411,6 +409,18 @@
   margin-left: 3rem;
 }
 
+.projects-images-pong {
+  width: auto;
+  height: 70%;
+  margin: 0 auto;
+}
+
+.see-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .see-link {
   text-decoration: none;
 }
@@ -435,6 +445,7 @@
   border-radius: 10px;
   overflow: hidden;
   width: 150px;
+  margin-right: 2rem;
 }
 
 .see-more div {
