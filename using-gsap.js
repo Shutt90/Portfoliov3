@@ -124,7 +124,7 @@ gsap.from(".projects-images-image", {
         trigger: ".projects-text",
         start: "top center",
     },
-    y: 500,
+    y: 100,
     opacity: 0,
     stagger: 0.5,
     duration: 1,
