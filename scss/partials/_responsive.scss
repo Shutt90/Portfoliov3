@@ -1,0 +1,70 @@
+@media (max-width: 1200px) {
+    .margin {
+        width: calc(100% - 50px);
+    }
+}
+
+@media (max-width: 980px) {
+    .margin {
+        width: calc(100% - 30px);
+    }
+
+    .about {
+        height: auto;
+    }
+
+    .skills {
+        height: auto;
+
+        &-container {
+            &-text {
+                margin: 2rem 2rem;
+                width: 100%;
+            }
+
+            &__box {
+                padding-bottom: 5rem;
+
+                &__skill-left {
+                    margin-left: 0;
+                }
+
+                &__skill-right {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .project {
+        height: auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .margin {
+        width: calc(100% - 15px);
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .skills {
+        &__box {
+            width: 50%;
+        }
+        &-arrow {
+            display: none;
+
+        }
+    }
+
+}
+
+@media (max-width: 480px) {
+    .margin {
+        width: 100%;
+    }
+}
