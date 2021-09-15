@@ -57,9 +57,11 @@ function addSpan(className, techName){
 }
 
 // See-more button with a ripple affect, offseting from left/top of event target pos
-const seeMore = document.querySelector(".see-more");
 
-seeMore.addEventListener("mouseover", function(e){
+const buttons = document.querySelectorAll('.see-more');
+
+buttons.forEach(button => {
+  button.addEventListener("mouseover", function(e){
 
     let x = e.clientX - e.target.offsetLeft;
     let y = e.clientY - e.target.offsetTop;
@@ -68,12 +70,13 @@ seeMore.addEventListener("mouseover", function(e){
 
     ripple.style.left = x + 'px';
     ripple.style.top = y + 'px';
-    seeMore.appendChild(ripple);
+    button.appendChild(ripple);
 
     setTimeout(() => {
         ripple.remove()
       }, 1000)
-    });
+    })
+  });
 
     // Adds lightbox effect to everything with class project-images-images
 

@@ -98,11 +98,6 @@
     display: flex;
   }
 
-  &-link {
-    text-decoration: none;
-
-  }
-
   &-more {
     display: flex;
     justify-content: center;
@@ -114,7 +109,7 @@
     color: whitesmoke;
     background-color: lighten(#0492C2, 10%);
     padding: 14px 20px;
-    border-radius: 10px;
+    border-radius: 1rem;
     overflow: hidden;
     width: 150px;
     margin-right:2rem;
@@ -123,7 +118,7 @@
       position: absolute;
       transform: translate(-50%, -50%);
       pointer-events: none;
-      border-radius: 50%;
+      border-radius: 300%;
       background-color: darken(#0492C2, 20%);
       animation: rippleEffect 1s linear infinite;
     }
