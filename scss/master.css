@@ -18,7 +18,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "nunito", sans-serif;
-  overflow: none;
 }
 
 .line-1 {
@@ -306,6 +305,10 @@
   border: 2px solid white;
 }
 
+.pin-spacer {
+  width: 100% !important;
+}
+
 .projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,20 +322,22 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
-  max-height: 100vh;
+  width: 100vw;
+  height: 100vh;
   background-color: #0492C2;
-  overflow: visible;
+  overflow: hidden;
+  -ms-scroll-snap-type: 0;
+      scroll-snap-type: 0;
 }
 
 .projects .project {
-  height: 100%;
-  width: 100%;
-  overflow: visible;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .projects-text {
-  width: calc(100% - 100px);
+  margin: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,7 +348,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 1rem;
 }
 
 .projects-text__title {
@@ -400,6 +404,10 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 2rem;
 }
 
 .projects-images-1 {
@@ -524,6 +532,12 @@
   .line-1-black {
     display: none;
   }
+  .line-2 {
+    width: calc(100% - 40px);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
   .line-2-black {
     display: none;
   }
@@ -555,30 +569,21 @@
   .skills-container__box {
     padding-bottom: 5rem;
   }
-}
-
-.projects {
-  height: auto;
-}
-
-.projects .project {
-  height: 100%;
-}
-
-.projects-text {
-  width: 80%;
-}
-
-.projects-text__title {
-  font-size: 1.5rem;
-}
-
-.projects-text__content {
-  font-size: 0.8rem;
-}
-
-.projects-images {
-  display: none;
+  .projects .project {
+    height: 100%;
+  }
+  .projects-text {
+    width: 80%;
+  }
+  .projects-text__title {
+    font-size: 1.5rem;
+  }
+  .projects-text__content {
+    font-size: 0.8rem;
+  }
+  .projects-images {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
