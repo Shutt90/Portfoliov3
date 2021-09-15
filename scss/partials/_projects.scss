@@ -4,11 +4,15 @@
   flex-wrap: wrap;
   flex-direction: column;
   height: 100%;
+  max-height: 100vh;
   background-color: #0492C2;
+  overflow: visible;
 
   .project {
       height: 100%;
       width: 100%;
+      overflow:visible;
+
     }
 
 
@@ -17,7 +21,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 3rem;
+    margin: 1rem;
     
     &__title {
         font-size: 3rem;
