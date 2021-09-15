@@ -98,7 +98,7 @@ gsap.fromTo('.skills-arrow', {
 })
 
 gsap.to(sections, {
-  xPercent: -100 * (sections.length - 1),
+  xPercent: -100 * (sections.length - 3),
   ease: "none",
   scrollTrigger: {
     trigger: ".projects",

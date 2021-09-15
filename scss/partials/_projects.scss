@@ -70,6 +70,7 @@
       width: calc(#{$i}00px - 20px);
         height: #{$i}00px / 3;
         margin-left: 3rem;
+        cursor: zoom-in;
         
       }
     }
@@ -78,6 +79,8 @@
       height: 300px;
       width: auto;
       margin-left: 3rem;
+      cursor: zoom-in;
+
     }
 
     
@@ -85,6 +88,8 @@
       width: auto;
       height: 70%;
       margin: 0 auto;
+      cursor: zoom-in;
+
     }
   }
 
