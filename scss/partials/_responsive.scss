@@ -39,27 +39,40 @@
     }
 
     .skills {
-    
-            &-text {
-                margin: 1rem;
-            }
+        height: 100%;
 
-            &__box {
-                padding-bottom: 5rem;
-
-                &__skill-left {
-                    margin-left: 0;
+            &-container {
+        
+                &-text {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 1rem;
                 }
 
-                &__skill-right {
-                    margin-right: 0;
+                &__box {
+                    padding-bottom: 5rem;
                 }
             }
         }
     }
 
-    .project {
-        height: auto;
+    .projects {
+        
+
+        .project {
+
+        }
+
+        &-text {
+            width: 80%;
+
+            &__title {
+                font-size: 1.5rem;
+            }
+        }
+
+        
+
     }
 
 
@@ -70,7 +83,6 @@
 
     .about {
         flex-direction: column;
-        height: 100%;
 
         &-me {
             padding: 2rem;
@@ -86,9 +98,10 @@
 
                 
             &-text {
+                display: flex;
+                justify-content: center;
                 text-align: center;
                 width: 100%;
-                margin: 0;
             }
 
             &__box {
